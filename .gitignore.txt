@@ -1,0 +1,36 @@
+create new .gitignore file everytime u push new code and add below lines in it
+
+############################
+# FRONTEND (React / Vite)
+############################
+**/node_modules/
+**/dist/
+**/build/
+**/.vite/
+
+############################
+# BACKEND (Spring Boot)
+############################
+**/target/
+**/*.log
+
+############################
+# SPRING PROFILES
+############################
+**/application-dev.properties
+**/application-local.properties
+.env
+
+############################
+# IDE
+############################
+.vscode/
+.idea/
+
+############################
+# OS
+############################
+.DS_Store
+Thumbs.db
+
+
