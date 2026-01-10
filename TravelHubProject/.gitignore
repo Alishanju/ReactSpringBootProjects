@@ -1,0 +1,21 @@
+### FRONTEND (React / Node) ###
+**/node_modules/
+**/dist/
+**/build/
+**/.vite/
+
+### BACKEND (Spring Boot / Java) ###
+**/target/
+**/*.log
+
+### ENV FILES ###
+**/.env
+**/.env.*
+
+### IDE ###
+.vscode/
+.idea/
+
+### OS ###
+.DS_Store
+Thumbs.db
