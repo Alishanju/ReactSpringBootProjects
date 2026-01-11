@@ -15,7 +15,7 @@ const GetAllTravels = ({stories,onEdit,onDelete,deletingId}) => {
     <div className='mx-auto flex flex-wrap items-center justify-center w-full'>
         {stories.map((story)=><div key={story.id} className='w-[530px] min-w-[230px] flex flex-col box-border items-center gap-2 p-4 border-2 text-center m-4'>
              <h3 className='text-lg text-purple-700 font-semibold'>{story.place}</h3>
-            <img src={story.image} loading={isMobile ? "eager" : "lazy"} fetchpriority={isMobile ? "high" : "auto"} alt={story.place} className='rounded-sm object-cover w-[300px] h-[200px]'/>
+            <img src={story.image} loading={isMobile ? "eager" : "lazy"} fetchPriority={isMobile ? "high" : "auto"} alt={story.place} className='rounded-sm object-cover w-[300px] h-[200px]'/>
             {/* <p>image link: {story.image}</p> */}
             <p className="w-[400px] max-sm:w-[300px] text-center box-border ">{story.description}</p>
             <p className='text-indigo-800'><b>Travel Date:</b> {story.travelDate} </p>

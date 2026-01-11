@@ -5,9 +5,6 @@ import TravelCarousel from './TravelCarousel';
 import TravelHubForm from './TravelHubForm';
 import { toast } from 'react-toastify';
 
-// const TravelCarousel=React.lazy(()=>import("./TravelCarousel"));
-// const GetAllTravels=React.lazy(()=>import("./GetAllTravels"));
-// const TravelHubForm=React.lazy(()=>import("./TravelHubForm"));
 
 const initialFormState = {
   id: null,
@@ -18,8 +15,7 @@ const initialFormState = {
 };
 
 const TravelStories = () => {
-  const API_URL="http://localhost:8080/travelhub";
-
+ const API_URL = import.meta.env.VITE_API_URL;
   const [travelHubs,setTravelHubs]=useState([]);
   const [form,setForm]=useState(initialFormState);
   const [loading,setLoading]=useState(false);
