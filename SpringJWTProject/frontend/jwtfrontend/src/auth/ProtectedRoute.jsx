@@ -1,0 +1,17 @@
+import { Navigate } from "react-router-dom";
+import { useAuth } from "./AuthContext";
+
+
+export default function ProtectedRoute({ children, adminOnly = false }) {
+  const { isLoggedIn, isAdmin } = useAuth();
+
+  if (!isLoggedIn) {
+    return <Navigate to="/login" />;
+  }
+
+  if (adminOnly && !isAdmin) {
+    return <Navigate to="/products" />;
+  }
+
+  return children;
+}

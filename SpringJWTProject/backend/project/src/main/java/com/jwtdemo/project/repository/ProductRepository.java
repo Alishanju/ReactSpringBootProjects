@@ -1,0 +1,10 @@
+package com.jwtdemo.project.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.jwtdemo.project.entity.Product;
+
+
+public interface ProductRepository extends JpaRepository<Product, Long> {
+}
+
